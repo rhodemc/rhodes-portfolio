@@ -1,50 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhodes Portfolio</title>
+    <title>Rhodemc - Beginner Software Engineer</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
+    <!-- username / nav -->
     <header>
         <h1>Rhodemc</h1>
-            <div>
-                <ul>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
-            </div>
+            <nav>
+                <a href="#about-me">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact-me">Contact Me</a>
+                <!-- need to link resume -->
+                <a href="#">Resume</a>
+            </nav>
     </header>
-    <div class='hero'></div>
-    <main>
-        <div id="about-me">
-            <h2 class="flex-left">About Me</h2>
-            <p class="flex-right">My name is Matt Rhodes. I live in Astoria, Oregon and am currently the Head Research and Development Brewer at Fort George Brewery.</p>
-        </div>    
-        <div id="work">
-            <h2 class="float-left">Work</h2>
-                <div class="project-main">Main Project</div>
-                <div class="project-two">Project 2</div>
-                <div class="project-three">Project 3</div>
-                <div class="project-four">Project 4</div>
-                <div class="project-five">Project 5</div>
+
+    <!-- epcot banner -->
+    <section class='hero-banner'>
+        <div>
+            <h2>"With the game and soul of an old school flick.."</h2>
         </div>
-    </main>
-    <footer>
+    </section>
+
+    <main class="main-wrapper">
+        <!-- about me -->
+        <section class="main-section" id="about-me">
+            <h2>About Me</h2>
+            <div>
+                <p>
+                    Helvetica put a bird on it church-key Blue Bottle banjo 
+                    bespoke brunch Etsy authentic Marfa quinoa typewriter plaid 
+                    direct trade small batch wayfarers bicycle rights cliche craft 
+                    beer gastropub single-origin coffee Godard Carles you probably 
+                    haven't heard of them irony pickled kitsch synth sriracha 
+                    gentrify literally heirloom blog Truffaut paleo scenester.
+                </p>
+                <p>
+                    Echo Park sriracha Pinterest vegan biodiesel 90's irony iPhone 
+                    Kickstarter Carles crucifix kitsch narwhal dreamcatcher pickled 
+                    trust fund selvage art party letterpress Tumblr post-ironic kogi 
+                    Thundercats Tonx Brooklyn Pitchfork Odd Future authentic normcore 
+                    freegan leggings Schlitz chambray organic tousled retro fap squid 
+                    street art church-key fashion axe Wes Anderson bespoke whatever 
+                    gentrify banh mi you probably haven't heard of them American 
+                    Apparel next level pug ugh.
+                </p>
+            </div>
+        </section>
+
+        <!-- portfolio container -->
+        <section class="main-section" id="work">
+            <h2>Work</h2>
+            <div class="flex-container">
+
+                <a href="#" class="flex-item project-main">
+                    <div>
+                        <h3>Main Project</h3>
+                        <span>TBD</span>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-item project-two">
+                    <div>
+                        <h3>Project 2</h3>
+                        <span>TBD</span>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-item project-three">
+                    <div>
+                        <h3>Project 3</h3>
+                        <span>TBD</span>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-item project-four">
+                    <div>
+                        <h3>Project 4</h3>
+                        <span>TBD</span>
+                    </div>
+                </a>
+
+                <a href="#" class="flex-item project-five">
+                    <div>
+                        <h3>Project 5</h3>
+                        <span>TBD</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="main-section contact-links" id="contact-me">
         <h2>Contact Me</h2>
             <div>
-                <ul>
-                    <li><a href="#">971.403.8248</a></li>
-                    <li><a href="#">rhodemc@gmail.com</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Spotify</a></li>
-                </ul>
+                <address>
+                    <a href="tel:+19714038248">971.403.8248</a>
+                    <a href="mailto:rhodemc@gmail.com">rhodemc@gmail.com</a>
+                    <a href="#">Github</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Spotify</a>
+                </address>
             </div>
-    </footer>
+        </section>
+    </main>
 </body>
+
 </html>
