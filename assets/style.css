@@ -87,7 +87,7 @@ nav a:last-child {
 /* Epcot banner image and sub-quote */
 .hero-banner {
     background-color: var(--paige);
-    background-image: url('../assets/images/Epcot.jpg');
+    background-image: url('/assets/images/Epcot.jpg');
     background-size: cover;
     background-position: center;
     min-height: 30vh;
@@ -241,23 +241,23 @@ nav a:last-child {
 
 /* projects images */
 .project-main {
-    background-image: url("../assets/images/barrels.jpg");
+    background-image: url("/assets/images/barrels.jpg");
 }
 
 .project-two {
-    background-image: url("../assets/images/hockey.jpg");
+    background-image: url("/assets/images/hockey.jpg");
 } 
 
 .project-three {
-    background-image: url("../assets/images/playstation.jpg");
+    background-image: url("/assets/images/playstation.jpg");
 }
 
 .project-four {
-    background-image: url("../assets/images/doggo.jpg");
+    background-image: url("/assets/images/doggo.jpg");
 }
 
 .project-five {
-    background-image: url("../assets/images/programming.jpg");
+    background-image: url("/assets/images/programming.jpg");
 }
 /* end of portfolio images */
 
