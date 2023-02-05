@@ -1,3 +1,4 @@
+/* universal box format */
 * {
     box-sizing: border-box;
 }
@@ -9,12 +10,15 @@
     --light-terracotta: #e8a87c;
     --paige: #c38d9e;
     --sea: #41b3a3;
+    --off-black: #2b2b2c;
 }
 
+/* body formatting */
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--paige);
+    background-color: var(--sea);
+    color: var(--off-black);
     font-family: "europa", sans-serif;
 }
 
@@ -31,6 +35,7 @@ p {
     margin: 0;
 }
 
+/* header formatting */
 header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -38,7 +43,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--dark-terracotta);
+    background-color: var(--sea);
 }
 
 header h1 {
@@ -46,10 +51,11 @@ header h1 {
     margin: 0;
     font-size: 4vw;
     line-height: 1;
-    color: var(--paige);
-    background-color: var(--baby-baby);
+    color: var(--off-black);
+    background-color: var(--light-terracotta);
 }
 
+/* navigation links formatting */
 nav {
     display: flex;
     flex-direction: row;
@@ -59,9 +65,9 @@ nav {
 nav a {
     padding: 5px 10px;
     margin-right: 10px;
-    color: var(--baby-baby);
+    color: var(--off-black);
     text-decoration: none;
-    background-image: linear-gradient(270deg, var(--baby-baby) 0%, var(--baby-baby) 100%);
+    background-image: linear-gradient(270deg, var(--light-terracotta) 0%, var(--light-terracotta) 100%);
     background-repeat: no-repeat;
     background-size: 100% .2em;
     background-position: bottom;
@@ -71,18 +77,14 @@ nav a {
 
 nav a:hover {
     background-size: 100% 100%;
-    color: var(--sea);
+    color: var(--off-black);
 }
 
 nav a:last-child {
     margin-right: 0;
 }
 
-/* main {
-    margin-top: 20px;
-    margin-bottom: 45px;
-} */
-
+/* Epcot banner image and sub-quote */
 .hero-banner {
     background-color: var(--paige);
     background-image: url('../assets/images/Epcot.jpg');
@@ -101,15 +103,16 @@ nav a:last-child {
 }
 
 .hero-banner h2 {
-    color: var(--paige);
-    background-color: var(--baby-baby);
+    color: var(--off-black);
+    background-color: var(--light-terracotta);
     margin: 0;
     padding: 5px 10px;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     display: inline;
 }
 
+/* main section formatting */
 .main-wrapper {
     max-width: 88%;
     margin-left: auto;
@@ -129,7 +132,7 @@ nav a:last-child {
     flex: 0 0 20%;
     text-align: right;
     padding-right: 15px;
-    border-right: 4px solid var(--baby-baby);
+    border-right: 4px solid var(--light-terracotta);
     font-size: 4vw;
     line-height: 1.1;
 }
@@ -138,10 +141,28 @@ nav a:last-child {
     flex: 0 0 77%;
 }
 
-.main-section p {
+/* about me image and font formatting */
+#about-me-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-section img {
+    max-width: 400px;
+}
+
+#about-me-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-size: 108%;
+}
+
+#about-me-p1 {
     margin-bottom: 20px;
 }
 
+/* contains project tiles */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -150,8 +171,8 @@ nav a:last-child {
 
 .flex-item {
     border: 5px solid;
-    background-color: var(--paige);
-    color: var(--baby-baby);
+    background-color: var(--off-black);
+    color: var(--off-black);
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -173,10 +194,12 @@ nav a:last-child {
     flex-basis: 100%;
 }
 
+/* hover effect for project links */
 .flex-item:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* project tile subheadings */
 .flex-item div {
     background-color: var(--paige);
     padding: 8px 10px;
@@ -186,6 +209,7 @@ nav a:last-child {
     font-size: 1.6rem;
 }
 
+/* contact links */
 .contact-links address {
     display: flex;
     flex-wrap: wrap;
@@ -195,12 +219,12 @@ nav a:last-child {
 }
 
 .contact-links address a {
-    color: var(--baby-baby);
+    color: var(--off-black);
     padding: 5px;
     text-decoration: none;
     font-size: 1.3rem;
-    font-style:normal;
-    background-image: linear-gradient(270deg, var(--baby-baby) 0%, var(--baby-baby) 100%);
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--light-terracotta) 0%, var(--light-terracotta) 100%);
     background-repeat: no-repeat;
     background-size: 100% .2em;
     background-position: bottom;
@@ -209,9 +233,10 @@ nav a:last-child {
     display: inline-block;
 }
 
+/* contact links hover effect */
 .contact-links address a:hover {
     background-size: 100% 88%;
-    color: var(--sea);
+    color: var(--off-black);
 }
 
 /* projects images */
@@ -234,11 +259,9 @@ nav a:last-child {
 .project-five {
     background-image: url("../assets/images/programming.jpg");
 }
-
 /* end of portfolio images */
 
 /* media queries */
-
 @media screen and (max-width: 980px) {
     header {
         padding: 0 0 10px 0;
@@ -260,11 +283,12 @@ nav a:last-child {
     .main-section > h2,
     .main-section > div {
         flex: 0 0 100%;
+        flex-direction: column;
     }
 
     .main-section > h2 {
         border-right: none;
-        border-bottom: 4px solid var(--baby-baby);
+        border-bottom: 4px solid var(--light-terracotta);
         margin-bottom: 20px;
         padding-bottom: 10px;
         text-align: left;
@@ -285,6 +309,11 @@ nav a:last-child {
     .hero-banner {
         justify-content: center;
         text-align: center;
+    }
+
+    .main-section img {
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .contact-links address {
