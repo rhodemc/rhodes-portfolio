@@ -87,7 +87,7 @@ nav a:last-child {
 /* Epcot banner image and sub-quote */
 .hero-banner {
     background-color: var(--paige);
-    background-image: url("/assets/images/Epcot.jpg");
+    background-image: url("../images/Epcot.jpg");
     background-size: cover;
     background-position: center;
     min-height: 30vh;
@@ -209,6 +209,27 @@ nav a:last-child {
     font-size: 1.6rem;
 }
 
+/* projects images */
+.project-main {
+    background-image: url("../images/barrels-one.jpg");
+}
+
+.project-two {
+    background-image: url("../images/hockey.jpg");
+} 
+
+.project-three {
+    background-image: url("../images/playstation.jpg");
+}
+
+.project-four {
+    background-image: url("../images/doggo.jpg");
+}
+
+.project-five {
+    background-image: url("../images/programming.jpg");
+}
+
 /* contact links */
 .contact-links address {
     display: flex;
@@ -237,27 +258,6 @@ nav a:last-child {
 .contact-links address a:hover {
     background-size: 100% 88%;
     color: var(--off-black);
-}
-
-/* projects images */
-.project-main {
-    background-image: url("/assets/images/barrels.jpg");
-}
-
-.project-two {
-    background-image: url("/assets/images/hockey.jpg");
-} 
-
-.project-three {
-    background-image: url("/assets/images/playstation.jpg");
-}
-
-.project-four {
-    background-image: url("/assets/images/doggo.jpg");
-}
-
-.project-five {
-    background-image: url("/assets/images/programming.jpg");
 }
 
 /* media queries */
